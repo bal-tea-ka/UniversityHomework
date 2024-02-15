@@ -12,7 +12,7 @@ public:
 	void accelerate() { speed += 5; };
 	void breakk() { speed -= 5; };
 	int get_speed() { return speed; };
-	void print_speed() { cout << "Ñêîðîñòü: " << get_speed() << "\n"; }
+	void print_speed() { cout << "Скорость: " << get_speed() << "\n"; }
 
 	Car(int year_model, string manufacture) {
 		speed = 0;
@@ -25,9 +25,9 @@ int main() {
 
 	int y;
 	string m;
-	cout << "Ââåäèòå ãîä âûïóñêà: ";
+	cout << "Введите год выпуска: ";
 	cin >> y;
-	cout << "Ââåäèòå íàçâàíèå çàâîäà: ";
+	cout << "Введите название завода изготовителя: ";
 	cin.ignore();
 
 	getline(cin, m);
