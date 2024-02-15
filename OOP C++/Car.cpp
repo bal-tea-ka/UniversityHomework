@@ -12,22 +12,22 @@ public:
 	void accelerate() { speed += 5; };
 	void breakk() { speed -= 5; };
 	int get_speed() { return speed; };
-	void print_speed() { cout << "Ñêîðîñòü: " << get_speed() << "\n"; }
+	void print_speed() { cout << "Ã‘ÃªÃ®Ã°Ã®Ã±Ã²Ã¼: " << get_speed() << "\n"; }
 
 	Car(int year_model, string manufacture) {
 		speed = 0;
 	}
 };
 
-int main1() {
+int main() {
 
 	setlocale(LC_ALL, "RUS");
 
 	int y;
 	string m;
-	cout << "Ââåäèòå ãîä âûïóñêà: ";
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã£Ã®Ã¤ Ã¢Ã»Ã¯Ã³Ã±ÃªÃ : ";
 	cin >> y;
-	cout << "Ââåäèòå íàçâàíèå çàâîäà: ";
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã§Ã Ã¢Ã®Ã¤Ã : ";
 	cin.ignore();
 
 	getline(cin, m);
