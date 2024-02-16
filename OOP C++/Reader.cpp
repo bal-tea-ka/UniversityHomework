@@ -4,14 +4,14 @@
 using namespace std;
 
 class Reader {
-public:
+private:
 	string FIO;
 	int number;
 	string faculty;
 	string birthday;
 	int phoneNumber;
 	int countBooks;
-
+public:
 	void set_FIO(string FIO) { this->FIO = FIO; };
 	void set_number(int number) { this->number = number; };
 	void set_faculty(string faculty) { this->faculty = faculty; };
@@ -50,32 +50,32 @@ int main() {
 	Reader ourReaders[3];
 	for (int i = 0; i < 3; i++) {
 		string F;
-		cout << "Ââåäèòå èìÿ ÷èòàòåëÿ: ";
+		cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¨Ã¬Ã¿ Ã·Ã¨Ã²Ã Ã²Ã¥Ã«Ã¿: ";
 		cin.ignore();
 		getline(cin, F);
 		ourReaders[i].set_FIO(F);
-		cout << "Ââåäèòå íîìåğ ÷èòàòëüñêîãî áèëåòà: ";
+		cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥Ã° Ã·Ã¨Ã²Ã Ã²Ã«Ã¼Ã±ÃªÃ®Ã£Ã® Ã¡Ã¨Ã«Ã¥Ã²Ã : ";
 		int n;
 		cin >> n;
 		ourReaders[i].set_number(n);
-		cout << "Ââåäèòå ôàêóëüòåò: ";
+		cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã´Ã ÃªÃ³Ã«Ã¼Ã²Ã¥Ã²: ";
 		string f;
 		cin.ignore();
 		getline(cin, f);
 		ourReaders[i].set_faculty(f);
-		cout << "Ââåäèòå äàòó ğîæäåíèÿ: ";
+		cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¤Ã Ã²Ã³ Ã°Ã®Ã¦Ã¤Ã¥Ã­Ã¨Ã¿: ";
 		string b;
 		getline(cin, b);
 		ourReaders[i].set_birthday(b);
-		cout << "Ââåèäòå íîìåğ òåëåôîíà: ";
+		cout << "Ã‚Ã¢Ã¥Ã¨Ã¤Ã²Ã¥ Ã­Ã®Ã¬Ã¥Ã° Ã²Ã¥Ã«Ã¥Ã´Ã®Ã­Ã : ";
 		int nn;
 		cin >> nn;
 		ourReaders[i].set_phoneNumber(nn);
 		ourReaders[i].set_countBooks(0);
-		cout << "Äàííûå âíåñåíû\n\n";
+		cout << "Ã„Ã Ã­Ã­Ã»Ã¥ Ã¢Ã­Ã¥Ã±Ã¥Ã­Ã»\n\n";
 	}
 
 	ourReaders[1].takeBook();
-	cout << "Ó ÷èòàòåëÿ ñ íîìåğîì " << ourReaders[1].get_number() << " " << ourReaders[1].get_countBooks() << " êíèã íà ğóêàõ\n";
+	cout << "Ã“ Ã·Ã¨Ã²Ã Ã²Ã¥Ã«Ã¿ Ã± Ã­Ã®Ã¬Ã¥Ã°Ã®Ã¬ " << ourReaders[1].get_number() << " " << ourReaders[1].get_countBooks() << " ÃªÃ­Ã¨Ã£ Ã­Ã  Ã°Ã³ÃªÃ Ãµ\n";
 	return 0;
 }
