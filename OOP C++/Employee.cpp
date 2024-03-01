@@ -27,30 +27,29 @@ int main3() {
 	Employee e2;
 	Employee e3;
 
-	e1.set_name("Сьюзан Мейерс");
+	e1.set_name("РЎСЊСЋР·Р°РЅ РњРµР№РµСЂСЃ");
 	e1.set_number(47899);
-	e1.set_department("Бухгалтерия");
-	e1.set_position("Вице-президент");
+	e1.set_department("Р‘СѓС…РіР°Р»С‚РµСЂРёСЏ");
+	e1.set_position("Р’РёС†Рµ-РїСЂРµР·РёРґРµРЅС‚");
 
-	e2.set_name("Марк Джоунс");
+	e2.set_name("РњР°СЂРє Р”Р¶РѕСѓРЅСЃ");
 	e2.set_number(39119);
-	e2.set_department("ИТ");
-	e2.set_position("Программист");
+	e2.set_department("РРў");
+	e2.set_position("РџСЂРѕРіСЂР°РјРјРёСЃС‚");
 
-	e3.set_name("Джой Роджерс");
+	e3.set_name("Р”Р¶РѕР№ Р РѕРґР¶РµСЂСЃ");
 	e3.set_number(81774);
-	e3.set_department("Производтвенный");
-	e3.set_position("Инжинер");
+	e3.set_department("РџСЂРѕРёР·РІРѕРґС‚РІРµРЅРЅС‹Р№");
+	e3.set_position("РРЅР¶РёРЅРµСЂ");
 
-	cout << "Первый сотрудник:\n" <<
-		"Имя: " << e1.get_name() << "\t Номер: " << e1.get_number() <<
-		"\nОтдел: " << e1.get_department() << "\tДолжность: " << e1.get_position() << "\n";
-	cout << "\nВторой сотрудник:\n" <<
-		"Имя: " << e2.get_name() << "\t Номер: " << e2.get_number() <<
-		"\nОтдел: " << e2.get_department() << "\tДолжность: " << e2.get_position() << "\n";
-	cout << "\nТретий сотрудник:\n" <<
-		"Имя: " << e3.get_name() << "\t Номер: " << e3.get_number() <<
-		"\nОтдел: " << e3.get_department() << "\tДолжность: " << e3.get_position() << "\n";
+	cout << "РџРµСЂРІС‹Р№ СЃРѕС‚СЂСѓРґРЅРёРє:\n" <<
+	"РРјСЏ: " << e1.get_name() << "\t РќРѕРјРµСЂ: " << e1.get_number() <<
+	"\nРћС‚РґРµР»: " << e1.get_department() << "\tР”РѕР»Р¶РЅРѕСЃС‚СЊ: " << e1.get_position() << "\n";
+	cout << "\nР’С‚РѕСЂРѕР№ СЃРѕС‚СЂСѓРґРЅРёРє:\n" <<
+	"РРјСЏ: " << e2.get_name() << "\t РќРѕРјРµСЂ: " << e2.get_number() <<
+	"\nРћС‚РґРµР»: " << e2.get_department() << "\tР”РѕР»Р¶РЅРѕСЃС‚СЊ: " << e2.get_position() << "\n";
+	cout << "\nРўСЂРµС‚РёР№ СЃРѕС‚СЂСѓРґРЅРёРє:\n" <<
+	"РРјСЏ: " << e3.get_name() << "\t РќРѕРјРµСЂ: " << e3.get_number() <<
+	"\nРћС‚РґРµР»: " << e3.get_department() << "\tР”РѕР»Р¶РЅРѕСЃС‚СЊ: " << e3.get_position() << "\n";
 	return 0;
-
 }
