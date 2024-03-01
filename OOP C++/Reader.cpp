@@ -50,32 +50,32 @@ int main() {
 	Reader ourReaders[3];
 	for (int i = 0; i < 3; i++) {
 		string F;
-		cout << "Ââåäèòå èìÿ ÷èòàòåëÿ: ";
+		cout << "Введите имя читателя: ";
 		cin.ignore();
 		getline(cin, F);
 		ourReaders[i].set_FIO(F);
-		cout << "Ââåäèòå íîìåð ÷èòàòëüñêîãî áèëåòà: ";
+		cout << "Введите номер читатльского билета: ";
 		int n;
 		cin >> n;
 		ourReaders[i].set_number(n);
-		cout << "Ââåäèòå ôàêóëüòåò: ";
+		cout << "Введите факультет: ";
 		string f;
 		cin.ignore();
 		getline(cin, f);
 		ourReaders[i].set_faculty(f);
-		cout << "Ââåäèòå äàòó ðîæäåíèÿ: ";
+		cout << "Введите дату рождения: ";
 		string b;
 		getline(cin, b);
 		ourReaders[i].set_birthday(b);
-		cout << "Ââåèäòå íîìåð òåëåôîíà: ";
+		cout << "Ввеидте номер телефона: ";
 		int nn;
 		cin >> nn;
 		ourReaders[i].set_phoneNumber(nn);
 		ourReaders[i].set_countBooks(0);
-		cout << "Äàííûå âíåñåíû\n\n";
+		cout << "Данные внесены\n\n";
 	}
 
 	ourReaders[1].takeBook();
-	cout << "Ó ÷èòàòåëÿ ñ íîìåðîì " << ourReaders[1].get_number() << " " << ourReaders[1].get_countBooks() << " êíèã íà ðóêàõ\n";
+	cout << "У читателя с номером " << ourReaders[1].get_number() << " " << ourReaders[1].get_countBooks() << " книг на руках\n";
 	return 0;
 }
