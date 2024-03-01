@@ -18,25 +18,24 @@ public:
 	int get_age() { return age; };
 	int get_phone_number() { return phone_number; };
 	Information() {
-		cout << "Ââåäèòå èìÿ: ";
+		cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ¸Ğ¼Ñ: ";
 		string n;
 		cin.ignore();
 		getline(cin, n);
 		set_FIO(n);
-		cout << "Ââåäèòå àäğåñ: ";
+		cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ°Ğ´Ñ€ĞµÑ: ";
 		string a;
 		cin.ignore();
 		getline(cin, a);
 		set_address(a);
-		cout << "Ââåäèòå âîçğàñò: ";
+		cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ²Ğ¾Ğ·Ñ€Ğ°ÑÑ‚: ";
 		int ag;
 		cin >> ag;
 		set_age(ag);
-		cout << "Ââåäèòå íîìåğ: ";
+		cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ½Ğ¾Ğ¼ĞµÑ€: ";
 		int nu = 0;
 		cin >> nu;
 		set_phone_number(nu);
-
 	}
 };
 
@@ -44,15 +43,13 @@ int main2() {
 
 	setlocale(LC_ALL, "RUS");
 
-	cout << "Ââåäèòå èíôîğìàèöş â ñåáå:\n";
+	cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ¸Ğ½Ñ„Ğ¾Ñ€Ğ¼Ğ°Ğ¸Ñ†Ñ Ğ² ÑĞµĞ±Ğµ:\n";
 	Information me;
 
-	cout << "Ââåäèòå èíôîğìàöèş î ñâîåì äğóãå:\n";
-
+	cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ¸Ğ½Ñ„Ğ¾Ñ€Ğ¼Ğ°Ñ†Ğ¸Ñ Ğ¾ ÑĞ²Ğ¾ĞµĞ¼ Ğ´Ñ€ÑƒĞ³Ğµ:\n";
 	Information fr;
 
-	cout << "Ââåäèòå èíôîğìàöèş î ñâîåì ïàğòíåğå:\n";
-
+	cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ¸Ğ½Ñ„Ğ¾Ñ€Ğ¼Ğ°Ñ†Ğ¸Ñ Ğ¾ ÑĞ²Ğ¾ĞµĞ¼ Ğ¿Ğ°Ñ€Ñ‚Ğ½ĞµÑ€Ğµ:\n";
 	Information love;
 
 	return 0;
